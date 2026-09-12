@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="home.title">Ichiro Ishii · Independent App Studio</title>
+  <meta name="description" data-i18n-attr="content:home.desc"
+        content="An independent studio crafting thoughtfully designed, privacy-respecting software for people around the world." />
+  <!-- Independent studio homepage. -->
+  <style>
+    :root {
+      --bg: #0d1117; --card: #161b22; --border: #30363d;
+      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+    .wrap { width: 100%; max-width: 680px; margin: 0 auto; padding: 96px 24px 48px; flex: 1; }
+    .avatar {
+      width: 76px; height: 76px; border-radius: 22px;
+      display: block; object-fit: cover; margin-bottom: 28px;
+      background: var(--card);
+      box-shadow: 0 8px 30px rgba(31,111,235,.35);
+      border: 1px solid var(--border);
+    }
+    h1 { font-size: 34px; letter-spacing: -0.5px; }
+    .tagline { color: var(--accent); font-size: 15px; margin-top: 10px; font-weight: 500; }
+    .lead { color: var(--text); font-size: 18px; margin-top: 28px; }
+    .body-copy { color: var(--muted); font-size: 16px; margin-top: 18px; }
+    .principles { margin-top: 32px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip {
+      font-size: 13px; color: var(--accent); border: 1px solid var(--border);
+      background: rgba(88,166,255,.08); padding: 5px 13px; border-radius: 999px;
+    }
+    .contact { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 15px; }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    footer { color: var(--muted); font-size: 13px; text-align: center; padding: 24px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="avatar" width="76" height="76"
+         src="./assets/avatar/ichiro-ishii-152.jpg"
+         alt="Ichiro Ishii" />
+    <h1 data-i18n="home.name">Ichiro Ishii</h1>
+    <p class="tagline" data-i18n="home.tagline">Independent App Studio</p>
+
+    <p class="lead" data-i18n="home.lead">
+      We craft thoughtfully designed software that people genuinely enjoy using — obsessively
+      polished, refreshingly simple, and built to respect the person on the other side of the screen.
+    </p>
+
+    <p class="body-copy" data-i18n="home.body">
+      Every product we ship is engineered to a first-class standard: fast, dependable, and honest
+      about your data. As our lineup grows, we're extending select apps with optional accounts,
+      one-time purchases, and premium online services — always opt-in, never at the cost of your privacy.
+    </p>
+
+    <div class="principles">
+      <span class="chip" data-i18n="common.chip.privacy">🔒 Privacy-first</span>
+      <span class="chip" data-i18n="common.chip.crafted">✨ Crafted with care</span>
+      <span class="chip" data-i18n="common.chip.global">🌍 Built for the world</span>
+    </div>
+
+    <p class="contact">
+      <span data-i18n="home.contact">For product support or business inquiries, reach us at</span>
+      <a href="mailto:ishiichiro.studio@gmail.com">ishiichiro.studio@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Ichiro Ishii · <span data-i18n="home.rights">All rights reserved.</span></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./assets/i18n/i18n.js"></script>
+</body>
+</html>

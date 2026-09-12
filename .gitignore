@@ -1,0 +1,8 @@
+prototypes/
+local-docs/
+
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
