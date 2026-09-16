@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-16T13:05:27.953Z",
+  "app": {
+    "slug": "game-2048",
+    "name": "2048",
+    "nameZh": "2048",
+    "bundleId": "com.ichiroishii.game2048",
+    "homepage": "https://ichiroishii.github.io/apps/game-2048/",
+    "category": "game",
+    "configUrl": "https://ichiroishii.github.io/config/v1/apps/game-2048.json"
+  },
+  "studio": {
+    "name": "Ichiro Ishii",
+    "label": "Independent App Studio",
+    "homepage": "https://ichiroishii.github.io/",
+    "supportEmail": "ishiichiro.studio@gmail.com",
+    "privacyUrl": "https://ichiroishii.github.io/privacy/"
+  },
+  "version": {
+    "name": "0.1.0",
+    "build": 1,
+    "channel": "development"
+  },
+  "platforms": {
+    "android": {
+      "minimumVersion": "0.1.0",
+      "minimumBuild": 1,
+      "latestVersion": "0.1.0",
+      "latestBuild": 1,
+      "forceUpgrade": false,
+      "updateMessage": "新版本包含重要改进与问题修复。",
+      "storeUrl": null,
+      "developmentStatus": "in_development",
+      "storeStatus": "not_published"
+    },
+    "ios": {
+      "minimumVersion": "0.1.0",
+      "minimumBuild": 1,
+      "latestVersion": "0.1.0",
+      "latestBuild": 1,
+      "forceUpgrade": false,
+      "updateMessage": "新版本包含重要改进与问题修复。",
+      "storeUrl": null,
+      "developmentStatus": "in_development",
+      "storeStatus": "not_published"
+    },
+    "web": {
+      "minimumVersion": "0.1.0",
+      "minimumBuild": 1,
+      "latestVersion": "0.1.0",
+      "latestBuild": 1,
+      "forceUpgrade": false,
+      "updateMessage": "新版本包含重要改进与问题修复。",
+      "storeUrl": "https://ichiroishii.github.io/apps/game-2048/",
+      "developmentStatus": "preview",
+      "storeStatus": "not_applicable"
+    }
+  },
+  "ads": {
+    "enabled": true,
+    "temporarySharedAndroidInventory": true,
+    "releaseReady": {
+      "android": false,
+      "ios": false
+    },
+    "banner": {
+      "enabled": true,
+      "placement": "bottom_safe_area"
+    },
+    "rewarded": {
+      "enabled": true,
+      "placements": []
+    },
+    "interstitial": {
+      "enabled": false,
+      "reason": "No interstitial ad unit has been supplied"
+    },
+    "production": {
+      "android": {
+        "appId": "ca-app-pub-5172471158231865~8608790708",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/5653868038",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/6695486961",
+        "interstitialAdUnitId": null
+      },
+      "ios": {
+        "appId": null,
+        "bannerAdUnitId": null,
+        "rewardedAdUnitId": null,
+        "interstitialAdUnitId": null
+      }
+    },
+    "test": {
+      "android": {
+        "appId": "ca-app-pub-3940256099942544~3347511713",
+        "bannerAdUnitId": "ca-app-pub-3940256099942544/9214589741",
+        "rewardedAdUnitId": "ca-app-pub-3940256099942544/5224354917",
+        "interstitialAdUnitId": "ca-app-pub-3940256099942544/1033173712"
+      },
+      "ios": {
+        "appId": "ca-app-pub-3940256099942544~1458002511",
+        "bannerAdUnitId": "ca-app-pub-3940256099942544/2435281174",
+        "rewardedAdUnitId": "ca-app-pub-3940256099942544/1712485313",
+        "interstitialAdUnitId": "ca-app-pub-3940256099942544/4411468910"
+      }
+    }
+  },
+  "membership": {
+    "enabled": false,
+    "provider": "none",
+    "adFreeEntitlement": "premium",
+    "products": {
+      "android": [],
+      "ios": []
+    }
+  },
+  "remoteConfig": {
+    "enabled": true,
+    "discoveryUrls": [
+      "https://ichiroishii.github.io/config/v1/discovery.json",
+      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json"
+    ],
+    "allowedHosts": [
+      "ichiroishii.github.io",
+      "raw.githubusercontent.com"
+    ],
+    "minimumAgreement": 2,
+    "timeoutMs": 2500,
+    "cacheTtlSeconds": 21600
+  },
+  "capabilities": {
+    "nativeGap": null
+  },
+  "privacy": {
+    "policyUrl": "https://ichiroishii.github.io/privacy/",
+    "supportEmail": "ishiichiro.studio@gmail.com"
+  }
+}

@@ -1,6 +1,1 @@
-# app-ads.txt — global ad verification file
-#
-# Format: <ad system domain>, <publisher ID>, <relationship DIRECT|RESELLER>, <certification authority ID (optional)>
-# One record per line. Crawlers fetch this file from the site root.
-
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-5172471158231865, DIRECT, f08c47fec0942fa0

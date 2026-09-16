@@ -9,18 +9,8 @@
  *       1. Manual choice persisted in localStorage ("site-lang").
  *       2. Browser / device language (navigator.languages), matched against the
  *          supported set with sensible region fallbacks.
- *       3. IP-based geolocation (public service) → country → language. This runs
- *          asynchronously: English is shown immediately, and the page re-renders
- *          in the geo-matched language once the lookup returns (unless the user
- *          has already picked a language manually).
- *       4. Fallback to English.
+ *       3. Fallback to English.
  *   - Missing keys or a failed fetch gracefully fall back to the inline English.
- *
- * On IP-based detection: the site is static (no backend), so geolocation is done
- * by calling a public, no-key, CORS-enabled IP service from the browser. Several
- * endpoints are tried in order for resilience; any failure or timeout silently
- * falls back to English. No IP or location data is stored — only the resolved
- * language code (and only if the user later confirms via manual switch) persists.
  */
 (function () {
   'use strict';
@@ -82,20 +72,7 @@
       EN = snapshot();
       buildSwitcher();
 
-      var resolved = resolveLocale();  // localStorage → browser/device language
-      applyLocale(resolved);
-
-      // If neither a manual choice nor the browser language matched, English is
-      // showing. Try IP-based geolocation as a last resort and re-render if it
-      // yields a supported, non-English language. A manual pick always wins, so
-      // we skip this entirely when the user has already chosen a language.
-      if (resolved === 'en' && !localStorage.getItem(LS_KEY)) {
-        resolveByGeo().then(function (geo) {
-          if (geo && geo !== 'en' && current === 'en' && !localStorage.getItem(LS_KEY)) {
-            applyLocale(geo);
-          }
-        });
-      }
+      applyLocale(resolveLocale());
     });
   }
 
@@ -138,80 +115,6 @@
       if (hit) return hit;
     }
     return 'en';
-  }
-
-  // Last-resort locale resolution via public IP-geolocation services. Returns a
-  // Promise resolving to a supported language code, or 'en' on any failure.
-  // Endpoints are tried in order; each returns an ISO country code we map to a
-  // language. All are keyless, HTTPS, CORS-enabled and free for light use.
-  function resolveByGeo() {
-    var providers = [
-      { url: 'https://ipapi.co/json/',            pick: function (d) { return d && d.country_code; } },
-      { url: 'https://ipwho.is/',                 pick: function (d) { return d && d.country_code; } },
-      { url: 'https://get.geojs.io/v1/ip/country.json', pick: function (d) { return d && d.country; } }
-    ];
-
-    return (function tryNext(i) {
-      if (i >= providers.length) return Promise.resolve('en');
-      return fetchWithTimeout(providers[i].url, 3500)
-        .then(function (r) { return r && r.ok ? r.json() : null; })
-        .then(function (data) {
-          var cc = data && providers[i].pick(data);
-          var loc = cc ? countryToLocale(String(cc).toUpperCase()) : null;
-          return loc || tryNext(i + 1);
-        })
-        .catch(function () { return tryNext(i + 1); });
-    })(0);
-  }
-
-  function fetchWithTimeout(url, ms) {
-    if (typeof AbortController === 'undefined') {
-      return fetch(url, { cache: 'no-cache' });
-    }
-    var ctrl = new AbortController();
-    var timer = setTimeout(function () { ctrl.abort(); }, ms);
-    return fetch(url, { cache: 'no-cache', signal: ctrl.signal })
-      .then(function (r) { clearTimeout(timer); return r; });
-  }
-
-  // Map an ISO 3166-1 alpha-2 country code to the best supported language,
-  // honouring region-specific Spanish/Portuguese/Chinese variants. Countries not
-  // listed fall through to English.
-  function countryToLocale(cc) {
-    var map = {
-      // Chinese
-      CN: 'zh-Hans', SG: 'zh-Hans',
-      TW: 'zh-Hant', HK: 'zh-Hant', MO: 'zh-Hant',
-      // Tier-1 CJK / Western Europe
-      JP: 'ja', KR: 'ko',
-      DE: 'de', AT: 'de', CH: 'de', LI: 'de',
-      FR: 'fr', BE: 'fr', LU: 'fr',
-      IT: 'it', SM: 'it', VA: 'it',
-      ES: 'es-ES',
-      // Portuguese
-      BR: 'pt-BR', PT: 'pt-BR', AO: 'pt-BR', MZ: 'pt-BR',
-      // Spanish (Latin America)
-      MX: 'es-419', AR: 'es-419', CO: 'es-419', CL: 'es-419', PE: 'es-419',
-      VE: 'es-419', EC: 'es-419', GT: 'es-419', CU: 'es-419', BO: 'es-419',
-      DO: 'es-419', HN: 'es-419', PY: 'es-419', SV: 'es-419', NI: 'es-419',
-      CR: 'es-419', PA: 'es-419', UY: 'es-419', PR: 'es-419',
-      // Arabic (RTL)
-      SA: 'ar', AE: 'ar', QA: 'ar', KW: 'ar', BH: 'ar', OM: 'ar', JO: 'ar',
-      LB: 'ar', IQ: 'ar', EG: 'ar', DZ: 'ar', MA: 'ar', TN: 'ar', LY: 'ar',
-      SD: 'ar', YE: 'ar', SY: 'ar', PS: 'ar',
-      // SE Asia + high-growth
-      ID: 'id', TH: 'th', VN: 'vi', IN: 'hi',
-      MY: 'ms', PH: 'fil',
-      // Slavic / Turkic
-      RU: 'ru', BY: 'ru', KZ: 'ru', KG: 'ru',
-      TR: 'tr', UA: 'uk',
-      // NW / Central / Northern Europe
-      NL: 'nl', PL: 'pl', SE: 'sv', IL: 'he',
-      RO: 'ro', MD: 'ro', CZ: 'cs',
-      DK: 'da', NO: 'no', FI: 'fi'
-    };
-    var code = map[cc];
-    return (code && SUPPORTED.indexOf(code) !== -1) ? code : null;
   }
 
   function has(code) { return SUPPORTED.indexOf(code) !== -1 ? code : null; }

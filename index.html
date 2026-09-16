@@ -29,6 +29,14 @@
     }
     h1 { font-size: 34px; letter-spacing: -0.5px; }
     .tagline { color: var(--accent); font-size: 15px; margin-top: 10px; font-weight: 500; }
+    .primary-nav { display: flex; gap: 20px; margin-top: 24px; }
+    .primary-nav a {
+      color: var(--text); font-size: 15px; font-weight: 600; text-decoration: none;
+      border-bottom: 1px solid var(--border); padding-bottom: 3px;
+    }
+    .primary-nav a:hover, .primary-nav a:focus-visible {
+      color: var(--accent); border-color: var(--accent);
+    }
     .lead { color: var(--text); font-size: 18px; margin-top: 28px; }
     .body-copy { color: var(--muted); font-size: 16px; margin-top: 18px; }
     .principles { margin-top: 32px; display: flex; gap: 8px; flex-wrap: wrap; }
@@ -50,6 +58,10 @@
          alt="Ichiro Ishii" />
     <h1 data-i18n="home.name">Ichiro Ishii</h1>
     <p class="tagline" data-i18n="home.tagline">Independent App Studio</p>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/apps/" data-i18n="home.nav.apps">Apps</a>
+      <a href="/privacy/" data-i18n="home.nav.privacy">Privacy</a>
+    </nav>
 
     <p class="lead" data-i18n="home.lead">
       We craft thoughtfully designed software that people genuinely enjoy using — obsessively

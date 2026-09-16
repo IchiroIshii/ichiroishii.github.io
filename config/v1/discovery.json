@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-16T13:05:27.953Z",
+  "studio": {
+    "name": "Ichiro Ishii",
+    "label": "Independent App Studio",
+    "homepage": "https://ichiroishii.github.io/",
+    "supportEmail": "ishiichiro.studio@gmail.com",
+    "privacyUrl": "https://ichiroishii.github.io/privacy/"
+  },
+  "configuration": {
+    "version": 1,
+    "primaryOrigin": "https://ichiroishii.github.io",
+    "discoveryUrls": [
+      "https://ichiroishii.github.io/config/v1/discovery.json",
+      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json"
+    ]
+  },
+  "apps": {
+    "netshare-proxy": {
+      "name": "NetShare Proxy",
+      "nameZh": "网络共享代理",
+      "category": "network",
+      "bundleId": "com.ichiroishii.netshareproxy",
+      "homepage": "https://ichiroishii.github.io/apps/netshare-proxy/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/netshare-proxy.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "zen-fish": {
+      "name": "Zen Fish",
+      "nameZh": "一念木鱼",
+      "category": "wellness",
+      "bundleId": "com.ichiroishii.zenfish",
+      "homepage": "https://ichiroishii.github.io/apps/zen-fish/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/zen-fish.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "decision-wheel": {
+      "name": "Decision Wheel",
+      "nameZh": "随机决策器",
+      "category": "utility",
+      "bundleId": "com.ichiroishii.decisionwheel",
+      "homepage": "https://ichiroishii.github.io/apps/decision-wheel/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/decision-wheel.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "breathing-478": {
+      "name": "4-7-8 Breathing",
+      "nameZh": "呼吸放松",
+      "category": "wellness",
+      "bundleId": "com.ichiroishii.breathing478",
+      "homepage": "https://ichiroishii.github.io/apps/breathing-478/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/breathing-478.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "water-tracker": {
+      "name": "Water Tracker",
+      "nameZh": "喝水打卡",
+      "category": "wellness",
+      "bundleId": "com.ichiroishii.watertracker",
+      "homepage": "https://ichiroishii.github.io/apps/water-tracker/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/water-tracker.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Focus",
+      "nameZh": "番茄钟",
+      "category": "productivity",
+      "bundleId": "com.ichiroishii.pomodorotimer",
+      "homepage": "https://ichiroishii.github.io/apps/pomodoro-timer/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/pomodoro-timer.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "nameZh": "强密码生成器",
+      "category": "utility",
+      "bundleId": "com.ichiroishii.passwordgenerator",
+      "homepage": "https://ichiroishii.github.io/apps/password-generator/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/password-generator.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "text-counter": {
+      "name": "Text Counter",
+      "nameZh": "字数统计",
+      "category": "utility",
+      "bundleId": "com.ichiroishii.textcounter",
+      "homepage": "https://ichiroishii.github.io/apps/text-counter/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/text-counter.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "unit-converter": {
+      "name": "Unit Converter",
+      "nameZh": "单位换算器",
+      "category": "utility",
+      "bundleId": "com.ichiroishii.unitconverter",
+      "homepage": "https://ichiroishii.github.io/apps/unit-converter/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/unit-converter.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "bmi-calculator": {
+      "name": "BMI Calculator",
+      "nameZh": "BMI 计算器",
+      "category": "wellness",
+      "bundleId": "com.ichiroishii.bmicalculator",
+      "homepage": "https://ichiroishii.github.io/apps/bmi-calculator/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/bmi-calculator.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "scratchpad": {
+      "name": "Scratchpad",
+      "nameZh": "极简草稿纸",
+      "category": "productivity",
+      "bundleId": "com.ichiroishii.scratchpad",
+      "homepage": "https://ichiroishii.github.io/apps/scratchpad/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/scratchpad.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "daily-quotes": {
+      "name": "Daily Quotes",
+      "nameZh": "每日金句",
+      "category": "lifestyle",
+      "bundleId": "com.ichiroishii.dailyquotes",
+      "homepage": "https://ichiroishii.github.io/apps/daily-quotes/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/daily-quotes.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "countdown-days": {
+      "name": "Countdown Days",
+      "nameZh": "纪念日倒计时",
+      "category": "lifestyle",
+      "bundleId": "com.ichiroishii.countdowndays",
+      "homepage": "https://ichiroishii.github.io/apps/countdown-days/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/countdown-days.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "white-noise": {
+      "name": "White Noise",
+      "nameZh": "白噪音",
+      "category": "wellness",
+      "bundleId": "com.ichiroishii.whitenoise",
+      "homepage": "https://ichiroishii.github.io/apps/white-noise/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/white-noise.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "travel-checklist": {
+      "name": "Travel Checklist",
+      "nameZh": "出行检查清单",
+      "category": "utility",
+      "bundleId": "com.ichiroishii.travelchecklist",
+      "homepage": "https://ichiroishii.github.io/apps/travel-checklist/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/travel-checklist.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "color-palette": {
+      "name": "Palette Lab",
+      "nameZh": "配色灵感",
+      "category": "creative",
+      "bundleId": "com.ichiroishii.palettelab",
+      "homepage": "https://ichiroishii.github.io/apps/color-palette/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/color-palette.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "reaction-test": {
+      "name": "Reaction Test",
+      "nameZh": "反应速度测试",
+      "category": "game",
+      "bundleId": "com.ichiroishii.reactiontest",
+      "homepage": "https://ichiroishii.github.io/apps/reaction-test/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/reaction-test.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "color-finder": {
+      "name": "Color Sense",
+      "nameZh": "色彩敏感度测试",
+      "category": "game",
+      "bundleId": "com.ichiroishii.colorsense",
+      "homepage": "https://ichiroishii.github.io/apps/color-finder/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/color-finder.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "game-2048": {
+      "name": "2048",
+      "nameZh": "2048",
+      "category": "game",
+      "bundleId": "com.ichiroishii.game2048",
+      "homepage": "https://ichiroishii.github.io/apps/game-2048/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/game-2048.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "tic-tac-toe": {
+      "name": "Tic Tac Toe",
+      "nameZh": "井字棋",
+      "category": "game",
+      "bundleId": "com.ichiroishii.tictactoe",
+      "homepage": "https://ichiroishii.github.io/apps/tic-tac-toe/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/tic-tac-toe.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    },
+    "pop-it": {
+      "name": "Pop It",
+      "nameZh": "解压泡泡纸",
+      "category": "game",
+      "bundleId": "com.ichiroishii.popit",
+      "homepage": "https://ichiroishii.github.io/apps/pop-it/",
+      "configUrl": "https://ichiroishii.github.io/config/v1/apps/pop-it.json",
+      "platforms": {
+        "android": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        },
+        "ios": {
+          "developmentStatus": "in_development",
+          "storeStatus": "not_published",
+          "storeUrl": null
+        }
+      }
+    }
+  }
+}
