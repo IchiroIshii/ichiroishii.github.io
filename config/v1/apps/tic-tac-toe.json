@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T13:11:09.594Z",
+  "generatedAt": "2026-09-17T02:55:34.144Z",
   "app": {
     "slug": "tic-tac-toe",
     "name": "Tic Tac Toe",
@@ -59,10 +59,10 @@
   },
   "ads": {
     "enabled": true,
-    "temporarySharedAndroidInventory": true,
+    "temporarySharedAndroidInventory": false,
     "releaseReady": {
-      "android": false,
-      "ios": false
+      "android": true,
+      "ios": true
     },
     "banner": {
       "enabled": true,
@@ -73,21 +73,23 @@
       "placements": []
     },
     "interstitial": {
-      "enabled": false,
-      "reason": "No interstitial ad unit has been supplied"
+      "enabled": true,
+      "placements": [
+        "every_second_round_result"
+      ]
     },
     "production": {
       "android": {
-        "appId": "ca-app-pub-5172471158231865~8608790708",
-        "bannerAdUnitId": "ca-app-pub-5172471158231865/5653868038",
-        "rewardedAdUnitId": "ca-app-pub-5172471158231865/6695486961",
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~3569935643",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/5911448941",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/3804160353",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/6430323693"
       },
       "ios": {
-        "appId": null,
-        "bannerAdUnitId": null,
-        "rewardedAdUnitId": null,
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~1795100804",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/7551833675",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/8168937469",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/8925817066"
       }
     },
     "test": {

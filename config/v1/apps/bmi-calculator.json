@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T13:11:09.594Z",
+  "generatedAt": "2026-09-17T02:55:34.144Z",
   "app": {
     "slug": "bmi-calculator",
     "name": "BMI Calculator",
@@ -59,10 +59,10 @@
   },
   "ads": {
     "enabled": true,
-    "temporarySharedAndroidInventory": true,
+    "temporarySharedAndroidInventory": false,
     "releaseReady": {
-      "android": false,
-      "ios": false
+      "android": true,
+      "ios": true
     },
     "banner": {
       "enabled": true,
@@ -70,24 +70,27 @@
     },
     "rewarded": {
       "enabled": true,
-      "placements": []
+      "placements": [
+        "personal_advice"
+      ]
     },
     "interstitial": {
       "enabled": false,
-      "reason": "No interstitial ad unit has been supplied"
+      "placements": [],
+      "reason": "No approved product placement"
     },
     "production": {
       "android": {
-        "appId": "ca-app-pub-5172471158231865~8608790708",
-        "bannerAdUnitId": "ca-app-pub-5172471158231865/5653868038",
-        "rewardedAdUnitId": "ca-app-pub-5172471158231865/6695486961",
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~8563864149",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/9145695951",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/7250782474",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/1326915684"
       },
       "ios": {
-        "appId": null,
-        "bannerAdUnitId": null,
-        "rewardedAdUnitId": null,
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~1481249347",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/7855086001",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/7641042599",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/3915840997"
       }
     },
     "test": {

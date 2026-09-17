@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T13:11:09.594Z",
+  "generatedAt": "2026-09-17T02:55:34.144Z",
   "app": {
     "slug": "travel-checklist",
     "name": "Travel Checklist",
@@ -59,10 +59,10 @@
   },
   "ads": {
     "enabled": true,
-    "temporarySharedAndroidInventory": true,
+    "temporarySharedAndroidInventory": false,
     "releaseReady": {
-      "android": false,
-      "ios": false
+      "android": true,
+      "ios": true
     },
     "banner": {
       "enabled": true,
@@ -73,21 +73,23 @@
       "placements": []
     },
     "interstitial": {
-      "enabled": false,
-      "reason": "No interstitial ad unit has been supplied"
+      "enabled": true,
+      "placements": [
+        "checklist_complete"
+      ]
     },
     "production": {
       "android": {
-        "appId": "ca-app-pub-5172471158231865~8608790708",
-        "bannerAdUnitId": "ca-app-pub-5172471158231865/5653868038",
-        "rewardedAdUnitId": "ca-app-pub-5172471158231865/6695486961",
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~6950777450",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/8543060729",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/5916897387",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/3011532447"
       },
       "ios": {
-        "appId": null,
-        "bannerAdUnitId": null,
-        "rewardedAdUnitId": null,
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~1698450774",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/4066040920",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/1865759709",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/2819960754"
       }
     },
     "test": {

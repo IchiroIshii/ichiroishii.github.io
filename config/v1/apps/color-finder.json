@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T13:11:09.594Z",
+  "generatedAt": "2026-09-17T02:55:34.144Z",
   "app": {
     "slug": "color-finder",
     "name": "Color Sense",
@@ -59,10 +59,10 @@
   },
   "ads": {
     "enabled": true,
-    "temporarySharedAndroidInventory": true,
+    "temporarySharedAndroidInventory": false,
     "releaseReady": {
-      "android": false,
-      "ios": false
+      "android": true,
+      "ios": true
     },
     "banner": {
       "enabled": true,
@@ -70,24 +70,28 @@
     },
     "rewarded": {
       "enabled": true,
-      "placements": []
+      "placements": [
+        "revive_15_seconds"
+      ]
     },
     "interstitial": {
-      "enabled": false,
-      "reason": "No interstitial ad unit has been supplied"
+      "enabled": true,
+      "placements": [
+        "every_second_game_result"
+      ]
     },
     "production": {
       "android": {
-        "appId": "ca-app-pub-5172471158231865~8608790708",
-        "bannerAdUnitId": "ca-app-pub-5172471158231865/5653868038",
-        "rewardedAdUnitId": "ca-app-pub-5172471158231865/6695486961",
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~8373960756",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/1806884101",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/2515040123",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/9865162514"
       },
       "ios": {
-        "appId": null,
-        "bannerAdUnitId": null,
-        "rewardedAdUnitId": null,
-        "interstitialAdUnitId": null
+        "appId": "ca-app-pub-5172471158231865~8552080841",
+        "bannerAdUnitId": "ca-app-pub-5172471158231865/7238999179",
+        "rewardedAdUnitId": "ca-app-pub-5172471158231865/4612835837",
+        "interstitialAdUnitId": "ca-app-pub-5172471158231865/5925917501"
       }
     },
     "test": {
