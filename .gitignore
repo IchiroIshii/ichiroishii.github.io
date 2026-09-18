@@ -1,8 +1,47 @@
 prototypes/
 local-docs/
+/dist/
+
+# Only the avatar used by the public site belongs in this repository.
+/assets/avatar/*
+!/assets/avatar/ichiro-ishii-152.jpg
 
 .DS_Store
 Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# Local hosting state and credentials.
+.vercel/
+.netlify/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+*.env
+.netrc
+.npmrc
+*.token
+credentials*.json
+service-account*.json
+secrets.*
+
+# Mobile signing keys, certificates, and provisioning artifacts.
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+*.pkcs12
+*.jks
+*.keystore
+*.cer
+*.crt
+*.der
+*.mobileprovision
+*.provisionprofile
+google-services.json
+GoogleService-Info.plist
+*.xcarchive/

@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T02:55:34.144Z",
+  "revision": 2,
+  "generatedAt": "2026-09-17T08:03:38.521Z",
   "app": {
     "slug": "color-palette",
     "name": "Palette Lab",
@@ -116,25 +117,31 @@
       "ios": []
     }
   },
+  "privacy": {
+    "policyUrl": "https://ichiroishii.github.io/privacy/",
+    "supportEmail": "ishiichiro.studio@gmail.com"
+  },
   "remoteConfig": {
     "enabled": true,
     "discoveryUrls": [
       "https://ichiroishii.github.io/config/v1/discovery.json",
-      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json"
+      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json",
+      "https://ichiroishii.pages.dev/config/v1/discovery.json",
+      "https://ichiroishii.netlify.app/config/v1/discovery.json",
+      "https://ichiroishii.vercel.app/config/v1/discovery.json"
     ],
     "allowedHosts": [
       "ichiroishii.github.io",
+      "ichiroishii.netlify.app",
+      "ichiroishii.pages.dev",
+      "ichiroishii.vercel.app",
       "raw.githubusercontent.com"
     ],
-    "minimumAgreement": 2,
+    "minimumAgreement": 1,
     "timeoutMs": 2500,
     "cacheTtlSeconds": 21600
   },
   "capabilities": {
     "nativeGap": null
-  },
-  "privacy": {
-    "policyUrl": "https://ichiroishii.github.io/privacy/",
-    "supportEmail": "ishiichiro.studio@gmail.com"
   }
 }

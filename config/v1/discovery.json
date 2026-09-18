@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T02:55:34.144Z",
+  "generatedAt": "2026-09-17T08:03:38.521Z",
   "studio": {
     "name": "Ichiro Ishii",
     "label": "Independent App Studio",
@@ -10,11 +10,17 @@
   },
   "configuration": {
     "version": 1,
+    "revision": 2,
     "primaryOrigin": "https://ichiroishii.github.io",
     "discoveryUrls": [
       "https://ichiroishii.github.io/config/v1/discovery.json",
-      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json"
-    ]
+      "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/discovery.json",
+      "https://ichiroishii.pages.dev/config/v1/discovery.json",
+      "https://ichiroishii.netlify.app/config/v1/discovery.json",
+      "https://ichiroishii.vercel.app/config/v1/discovery.json"
+    ],
+    "minimumAgreement": 1,
+    "trustModel": "pinned-fields"
   },
   "apps": {
     "netshare-proxy": {
@@ -24,6 +30,15 @@
       "bundleId": "com.ichiroishii.netshareproxy",
       "homepage": "https://ichiroishii.github.io/apps/netshare-proxy/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/netshare-proxy.json",
+      "configPath": "apps/netshare-proxy.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/netshare-proxy.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/netshare-proxy.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/netshare-proxy.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/netshare-proxy.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/netshare-proxy.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -44,6 +59,15 @@
       "bundleId": "com.ichiroishii.zenfish",
       "homepage": "https://ichiroishii.github.io/apps/zen-fish/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/zen-fish.json",
+      "configPath": "apps/zen-fish.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/zen-fish.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/zen-fish.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/zen-fish.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/zen-fish.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/zen-fish.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -64,6 +88,15 @@
       "bundleId": "com.ichiroishii.decisionwheel",
       "homepage": "https://ichiroishii.github.io/apps/decision-wheel/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/decision-wheel.json",
+      "configPath": "apps/decision-wheel.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/decision-wheel.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/decision-wheel.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/decision-wheel.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/decision-wheel.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/decision-wheel.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -84,6 +117,15 @@
       "bundleId": "com.ichiroishii.breathing478",
       "homepage": "https://ichiroishii.github.io/apps/breathing-478/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/breathing-478.json",
+      "configPath": "apps/breathing-478.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/breathing-478.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/breathing-478.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/breathing-478.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/breathing-478.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/breathing-478.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -104,6 +146,15 @@
       "bundleId": "com.ichiroishii.watertracker",
       "homepage": "https://ichiroishii.github.io/apps/water-tracker/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/water-tracker.json",
+      "configPath": "apps/water-tracker.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/water-tracker.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/water-tracker.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/water-tracker.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/water-tracker.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/water-tracker.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -124,6 +175,15 @@
       "bundleId": "com.ichiroishii.pomodorotimer",
       "homepage": "https://ichiroishii.github.io/apps/pomodoro-timer/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/pomodoro-timer.json",
+      "configPath": "apps/pomodoro-timer.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/pomodoro-timer.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/pomodoro-timer.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/pomodoro-timer.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/pomodoro-timer.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/pomodoro-timer.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -144,6 +204,15 @@
       "bundleId": "com.ichiroishii.passwordgenerator",
       "homepage": "https://ichiroishii.github.io/apps/password-generator/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/password-generator.json",
+      "configPath": "apps/password-generator.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/password-generator.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/password-generator.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/password-generator.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/password-generator.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/password-generator.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -164,6 +233,15 @@
       "bundleId": "com.ichiroishii.textcounter",
       "homepage": "https://ichiroishii.github.io/apps/text-counter/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/text-counter.json",
+      "configPath": "apps/text-counter.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/text-counter.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/text-counter.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/text-counter.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/text-counter.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/text-counter.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -184,6 +262,15 @@
       "bundleId": "com.ichiroishii.unitconverter",
       "homepage": "https://ichiroishii.github.io/apps/unit-converter/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/unit-converter.json",
+      "configPath": "apps/unit-converter.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/unit-converter.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/unit-converter.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/unit-converter.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/unit-converter.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/unit-converter.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -204,6 +291,15 @@
       "bundleId": "com.ichiroishii.bmicalculator",
       "homepage": "https://ichiroishii.github.io/apps/bmi-calculator/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/bmi-calculator.json",
+      "configPath": "apps/bmi-calculator.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/bmi-calculator.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/bmi-calculator.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/bmi-calculator.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/bmi-calculator.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/bmi-calculator.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -224,6 +320,15 @@
       "bundleId": "com.ichiroishii.scratchpad",
       "homepage": "https://ichiroishii.github.io/apps/scratchpad/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/scratchpad.json",
+      "configPath": "apps/scratchpad.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/scratchpad.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/scratchpad.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/scratchpad.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/scratchpad.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/scratchpad.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -244,6 +349,15 @@
       "bundleId": "com.ichiroishii.dailyquotes",
       "homepage": "https://ichiroishii.github.io/apps/daily-quotes/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/daily-quotes.json",
+      "configPath": "apps/daily-quotes.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/daily-quotes.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/daily-quotes.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/daily-quotes.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/daily-quotes.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/daily-quotes.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -264,6 +378,15 @@
       "bundleId": "com.ichiroishii.countdowndays",
       "homepage": "https://ichiroishii.github.io/apps/countdown-days/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/countdown-days.json",
+      "configPath": "apps/countdown-days.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/countdown-days.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/countdown-days.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/countdown-days.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/countdown-days.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/countdown-days.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -284,6 +407,15 @@
       "bundleId": "com.ichiroishii.whitenoise",
       "homepage": "https://ichiroishii.github.io/apps/white-noise/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/white-noise.json",
+      "configPath": "apps/white-noise.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/white-noise.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/white-noise.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/white-noise.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/white-noise.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/white-noise.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -304,6 +436,15 @@
       "bundleId": "com.ichiroishii.travelchecklist",
       "homepage": "https://ichiroishii.github.io/apps/travel-checklist/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/travel-checklist.json",
+      "configPath": "apps/travel-checklist.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/travel-checklist.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/travel-checklist.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/travel-checklist.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/travel-checklist.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/travel-checklist.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -324,6 +465,15 @@
       "bundleId": "com.ichiroishii.palettelab",
       "homepage": "https://ichiroishii.github.io/apps/color-palette/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/color-palette.json",
+      "configPath": "apps/color-palette.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/color-palette.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/color-palette.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/color-palette.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/color-palette.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/color-palette.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -344,6 +494,15 @@
       "bundleId": "com.ichiroishii.reactiontest",
       "homepage": "https://ichiroishii.github.io/apps/reaction-test/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/reaction-test.json",
+      "configPath": "apps/reaction-test.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/reaction-test.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/reaction-test.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/reaction-test.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/reaction-test.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/reaction-test.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -364,6 +523,15 @@
       "bundleId": "com.ichiroishii.colorsense",
       "homepage": "https://ichiroishii.github.io/apps/color-finder/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/color-finder.json",
+      "configPath": "apps/color-finder.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/color-finder.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/color-finder.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/color-finder.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/color-finder.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/color-finder.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -384,6 +552,15 @@
       "bundleId": "com.ichiroishii.game2048",
       "homepage": "https://ichiroishii.github.io/apps/game-2048/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/game-2048.json",
+      "configPath": "apps/game-2048.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/game-2048.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/game-2048.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/game-2048.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/game-2048.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/game-2048.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -404,6 +581,15 @@
       "bundleId": "com.ichiroishii.tictactoe",
       "homepage": "https://ichiroishii.github.io/apps/tic-tac-toe/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/tic-tac-toe.json",
+      "configPath": "apps/tic-tac-toe.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/tic-tac-toe.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/tic-tac-toe.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/tic-tac-toe.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/tic-tac-toe.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/tic-tac-toe.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
@@ -424,6 +610,15 @@
       "bundleId": "com.ichiroishii.popit",
       "homepage": "https://ichiroishii.github.io/apps/pop-it/",
       "configUrl": "https://ichiroishii.github.io/config/v1/apps/pop-it.json",
+      "configPath": "apps/pop-it.json",
+      "configUrls": [
+        "https://ichiroishii.github.io/config/v1/apps/pop-it.json",
+        "https://raw.githubusercontent.com/IchiroIshii/ichiroishii.github.io/main/config/v1/apps/pop-it.json",
+        "https://ichiroishii.pages.dev/config/v1/apps/pop-it.json",
+        "https://ichiroishii.netlify.app/config/v1/apps/pop-it.json",
+        "https://ichiroishii.vercel.app/config/v1/apps/pop-it.json"
+      ],
+      "revision": 2,
       "platforms": {
         "android": {
           "developmentStatus": "in_development",
